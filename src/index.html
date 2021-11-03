@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>list</title>
-    <!-- <link rel="stylesheet" href="index.css"> -->
-    <!-- <script src="index.js" async></script> -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>tic-tac-toe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <!-- <link href="./index.css" rel="stylesheet"> -->
+  <!-- <script src="./generateField.js" defer="defer"></script> -->
+  <!-- <script type="module" src="./index.js" defer="defer"></script> -->
 </head>
+
 <body>
-  <form action="." id="form">
-    <input type="text" id="text-work">
-    <input type="button" value="ADD" id="btn-send">
-  </form>
-  <div id="container">
-    <ul class="zebra" id="list-inline"> 
-    </ul>
+  <div id="app">
+    <div class="won-title hidden">
+      <span class="won-message"></span>
+      <button class="restart-btn btn">Restart game</button>
+    </div>
+    <div class="field"></div>
+    <button disabled class="undo-btn btn">Undo</button>
+    <button disabled class="redo-btn btn">Redo</button>
   </div>
 </body>
+
 </html>
